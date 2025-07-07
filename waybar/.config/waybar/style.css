@@ -46,11 +46,13 @@
 #pulseaudio {
   color: #14b8a6;
   margin-right: 4px;
+  padding-left: 4px;
 }
 
 #cpu {
   color: #0ea5e9;
   margin-right: 4px;
+  margin-left: 4px;
 }
 
 #temperature {
