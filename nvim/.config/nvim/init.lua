@@ -97,6 +97,8 @@ vim.g.have_nerd_font = false
 -- See `:help vim.opt`
 -- NOTE: You can change these options as you wish!
 --  For more options, you can see `:help option-list`
+vim.o.ttimeoutlen = 10  -- Defualt is 1000
+vim.o.timeoutlen = 1000
 
 -- Make line numbers default
 vim.opt.number = true
