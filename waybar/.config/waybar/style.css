@@ -68,3 +68,53 @@
 #custom-powermenu {
   color: #f43f5e;
 }
+
+/* Battery module styling */
+#battery {
+    /*background-color: #2b2b2b;*/
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+/* Battery charging state */
+#battery.charging {
+    background-color: #26a65b;
+    color: #ffffff;
+    animation: charging 2s ease-in-out infinite;
+}
+
+/* Battery plugged (full) state */
+#battery.plugged {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+/* Battery warning state */
+#battery.warning {
+    background-color: #f39c12;
+    color: #ffffff;
+}
+
+/* Battery critical state */
+#battery.critical {
+    background-color: #e74c3c;
+    color: #ffffff;
+    animation: blink 1s linear infinite;
+}
+
+/* Charging animation */
+/*@keyframes charging {
+    0% { opacity: 1; }
+    50% { opacity: 0.7; }
+    100% { opacity: 1; }
+}*/
+
+/* Critical battery blinking */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}

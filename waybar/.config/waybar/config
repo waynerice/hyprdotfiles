@@ -3,14 +3,13 @@
   "position": "top",
   "margin-bottom": 0,
   "modules-left": [
-    "tray",
+    "clock",
     "custom/separator",
-    "hyprland/workspaces",
-    "custom/separator"
+    "tray"
   ],
   "modules-center": [
-    "clock",
-    "hyprland/window"
+    "hyprland/workspaces"
+    //"hyprland/window"
   ],
   "modules-right": [
     "network",
@@ -105,18 +104,61 @@
     "on-click": "pavucontrol"
   },
   "battery": {
-    "format": " {icon}  {capacity}% ",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ]
+      "interval": 10,
+      "bat": "BAT0",
+      "adapter": "ACAD",
+      "full-at": 95,
+      "states": {
+          "good": 95,
+          "warning": 30,
+          "critical": 15
+      },
+      "format": "{icon} {capacity}% ",
+      "format-charging": "{icon} {capacity}% ",
+      "format-plugged": "{icon} {capacity}%🔌 ",
+      "format-alt": "{time} {icon}",
+      "format-full": "{icon} {capacity}% ",
+      "format-icons": {
+          "default": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+          "charging": ["󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
+      }
+      //"tooltip-format": "Battery: {capacity}%\nTime: {timeTo}\nPower: {power}W\nStatus: {status}\nCycles: {cycles}",
+      //"max-length": 25
+      //"on-click": "gnome-power-statistics",
+      //"on-click-right": "powertop"
   },
+  //"battery": {
+  //  "format": " {icon}  {capacity}% ",
+  //  "format-icons": [
+  //    "",
+  //    "",
+  //    "",
+  //    "",
+  //    ""
+  //  ]
+  //},
   "custom/powermenu": {
     "format": "  ",
     "tooltip": false,
     "on-click": "exec wlogout -p layer-shell"
   }
+  //"pulseaudio": {
+  //  "scroll-step": 5,
+  //  "format": "{volume}% {icon}",
+  //  "format-bluetooth": "{volume}% {icon}",
+  //  "format-muted": "",
+  //  "format-icons": {
+  //      "headphone": "",
+  //      "hands-free": "",
+  //      "headset": "",
+  //      "phone": "",
+  //      "portable": "",
+  //      "car": "",
+  //      "default": ["", "", ""]
+  //  },
+  //  "on-click": "pavucontrol",
+  //  "on-click-right": "pamixer --toggle-mute",
+  //  "on-scroll-up": "pamixer -i 5",
+  //  "on-scroll-down": "pamixer -d 5"
+  //}
 }
