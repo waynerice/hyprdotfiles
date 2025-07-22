@@ -34,7 +34,8 @@
     // 24 hour
     // "format": " {:%H:%M} ",
     // 12 hour
-    "format": " {:%A %B %d  %I:%M%p}  󰸗 ",
+    //"format": "  {:%I:%M%p  󰸗 %A %B %d}",
+    "format": " 󰸗 {:%A %B %d   %I:%M%p}",
     "interval": 60,
     "tooltip": true,
     //"tooltip-format": "{:%d %B %H:%M}"

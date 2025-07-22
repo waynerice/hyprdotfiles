@@ -3,7 +3,7 @@
 }
 
 #waybar {
-  background: rgba(23, 23, 23, 0.5); /* Changed from #171717 to a transparent dark tint */
+  background: #171717;
   color: #fff;
 }
 
@@ -27,13 +27,11 @@
 }
 
 #workspaces button:hover {
-  /*background-color: #262626;*/
-  background-color: transparent;
+  background-color: #262626;
 }
 
 #workspaces button.active {
-  /*color: #84cc16;*/
-  color: #39ff14;
+  color: #84cc16;
 }
 
 #window {
@@ -75,8 +73,7 @@
 #battery {
     /*background-color: #2b2b2b;*/
     background-color: transparent;
-    /*color: #ffffff;*/
-    color: #ff6ec7;
+    color: #ffffff;
     border-radius: 5px;
     padding: 0 10px;
     margin: 0 5px;
@@ -84,27 +81,27 @@
 
 /* Battery charging state */
 #battery.charging {
-    /*background-color: #26a65b;*/
-    color: #ff6ec7;
+    background-color: #26a65b;
+    color: #ffffff;
     animation: charging 2s ease-in-out infinite;
 }
 
 /* Battery plugged (full) state */
 #battery.plugged {
-    /*background-color: #3498db;*/
-    color: #ff6ec7;
+    background-color: #3498db;
+    color: #ffffff;
 }
 
 /* Battery warning state */
 #battery.warning {
-    /*background-color: #f39c12;*/
-    color: #ff6ec7;
+    background-color: #f39c12;
+    color: #ffffff;
 }
 
 /* Battery critical state */
 #battery.critical {
-    /*background-color: #e74c3c;*/
-    color: #ff6ec7;
+    background-color: #e74c3c;
+    color: #ffffff;
     animation: blink 1s linear infinite;
 }
 
